@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--********** Copyright 2016 Roku Corp. All Rights Reserved. ********** -->
+
+
+<component name="SimpleMarkupListScene" extends="Scene">
+
+	<script type="text/brightscript" uri="pkg:/components/registry.brs" />
+	<script type="text/brightscript" uri="pkg:/components/SimpleMarkupListScene.brs" />
+
+	<children>
+
+		<LayoutGroup translation="[80,50]">
+			<Label id="title" height="50" text="Roku Registry Manager"
+				font="font:LargeBoldSystemFont" />
+			<Label id="sub title" text="Click OK to delete an item from the list"
+				font="font:SmallSystemFont" />
+		</LayoutGroup>
+
+		<Group translation="[100,150]">
+			<MarkupList id="SectionsMarkupList" itemComponentName="SimpleListItem"
+				itemSize="[300, 35]" itemSpacing="[0, 20]" translation="[0, 0]"
+				numRows="7" />
+
+			<MarkupList id="KeysMarkupList" itemComponentName="SimpleListItem"
+				itemSize="[700, 65]" itemSpacing="[0, 20]" translation="[400,0]"
+				numRows="5" />
+		</Group>
+		
+		<LayoutGroup translation="[620, 670]" layoutDirection="vert"
+			horizAlignment="center">
+			<Label horizAlign="center" id="title" height="50"
+				text="Developed by Yossi Ben Naim from Silver Hawks TLV" font="font:SmallSystemFont" />
+		</LayoutGroup>
+	</children>
+
+</component>

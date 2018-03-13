@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--********** Copyright 2016 Roku Corp. All Rights Reserved. ********** -->
+
+
+<component name="SimpleListItem" extends="Group">
+
+	<interface>
+		<field id="itemContent" type="node" onChange="itemContentChanged" />
+	</interface>
+
+	<script type="text/brightscript">
+<![CDATA[ 
+  function itemContentChanged() 
+    itemData = m.top.itemContent
+    m.itemText.text = itemData.labelText
+    m.item2Text.text = itemData.label2Text
+  end function
+  
+  function init()
+    m.itemImage = m.top.findNode("itemImage") 
+    m.itemText = m.top.findNode("itemText") 
+    m.item2Text = m.top.findNode("item2Text") 
+  end function
+]]>
+	</script>
+
+	<children>
+		<LayoutGroup layoutDirection="vert" horizAlignment="left" 
+				itemSpacings="0">
+				<Label id="itemText" font="font:MediumSystemFont" vertAlign="center" color="0xffff00ff" height="40"/>
+				<Label wrap="false" width="700" id="item2Text" vertAlign="center" font="font:SmallSystemFont" color="0xa0cc40ff" />
+		</LayoutGroup>
+	</children>
+
+</component>
