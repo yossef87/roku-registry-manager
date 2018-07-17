@@ -1,0 +1,14 @@
+{
+  "name": "roku-registry-manager",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "roku-deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://egbitbucket.dtvops.net/scm/roku/main.git"
+  },
+  "devDependencies": {
+    "roku-deploy": "^0.1.11"
+  }
+}

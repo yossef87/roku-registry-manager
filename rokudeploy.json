@@ -1,0 +1,14 @@
+{
+    "host": "192.168.189.89",
+    "password": "Aa123456",
+    "outDir": "out",
+    "rootDir": "",
+    "files": [
+        "source/**/*.*",
+        "components/**/*.*",
+        "images/**/*.*",
+        "Configs/**/*.*",
+        "fonts/**/*.*",
+        "manifest"
+    ]
+}
